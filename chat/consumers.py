@@ -1,8 +1,15 @@
-from channels.generic.websocket import AsyncJsonWebsocketConsumer
+from channels.generic.websocket import AsyncWebsocketConsumer
+import json
 
 
 # This file is alternative for views.py for asgi 
 
 
-class ChatConsumer(AsyncJsonWebsocketConsumer):
-    pass
+class ChatConsumer(AsyncWebsocketConsumer):
+    async def connect(self):
+        
+        await(
+            
+        )
+        
+        
