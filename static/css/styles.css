@@ -1,3 +1,7 @@
 body{
     background-color: aliceblue;
 }
+
+.chat-text{
+    margin-left: 300px;
+}
