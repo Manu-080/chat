@@ -170,3 +170,7 @@ CHANNEL_LAYERS ={
         },
     },
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://chat-2-h3zi.onrender.com",
+]
