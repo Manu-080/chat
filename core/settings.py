@@ -172,5 +172,5 @@ CHANNEL_LAYERS ={
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://'chat-qx8g.onrender.com'",
+    "https://chat-qx8g.onrender.com",
 ]
