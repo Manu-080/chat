@@ -51,15 +51,15 @@ class ChatConsumer(AsyncWebsocketConsumer):
     # recieve message from frontend to websocket function
     async def receive(self, text_data):
         # converting json string to dict '{'message':message}' string  => {'message':message} dictionary
-        text_data_obj = json.loads(text_data) 
-        message = text_data_obj['message']
-        username = text_data_obj['username']
-        print(text_data_obj)
+        text_data_dict = json.loads(text_data) 
+        message = text_data_dict['message']
+        username = text_data_dict['username']
+        print(text_data_dict)
 
         await self.channel_layer.group_send(
             self.room_group_name,
             {
-                'type':'chatroom_message',
+                'type':'chatroom_message', # function
                 'message':message,
                 'username':username,
             }
